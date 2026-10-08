@@ -1,0 +1,47 @@
+# Air Quality Data Cleaning and Preprocessing
+
+## 📌 Project Overview
+This project focuses on cleaning and preprocessing an air quality dataset using Python. The goal is to improve data quality and prepare the dataset for further analysis.
+
+## 🎯 Objectives
+- Inspect the dataset and identify data quality issues.
+- Handle missing values.
+- Convert columns to appropriate data types.
+- Remove unnecessary rows and columns.
+- Detect potential outliers.
+- Export the cleaned dataset.
+
+## 🛠️ Technologies Used
+- Python
+- Pandas
+- NumPy
+- Jupyter Notebook
+
+## 🧹 Data Cleaning Steps
+1. Inspected the dataset's structure and data types.
+2. Removed completely empty rows and unnecessary columns.
+3. Converted decimal-comma values into numeric values.
+4. Replaced `-200` missing-value markers with `NaN`.
+5. Removed the `NMHC(GT)` column because approximately 90% of its values were missing.
+6. Filled remaining missing numerical values using median imputation.
+7. Detected potential outliers using the Interquartile Range (IQR) method.
+8. Validated and exported the cleaned dataset.
+
+## 📊 Final Dataset Summary
+- **Rows:** 9,357
+- **Columns:** 14
+- **Missing values:** 0
+- **Duplicate rows:** 0
+
+## 📁 Project Files
+- `Air_Quality_Data_Cleaning.ipynb` — Jupyter Notebook containing the cleaning and preprocessing code.
+- `cleaned_air_quality.csv` — Final cleaned dataset.
+
+## 🔎 Outlier Handling
+Potential outliers were detected using the IQR method. They were retained because extreme air quality readings may represent genuine environmental conditions.
+
+## ✅ Conclusion
+The dataset was cleaned and validated using Python libraries. The resulting dataset is prepared for further exploratory data analysis.
+
+## 👨‍💻 Author
+Sachin Das
